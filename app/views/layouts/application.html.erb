@@ -20,9 +20,11 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "css/bootstrap.min" %>
+    <%= javascript_include_tag "/javascripts/js/bootstrap.bundle.min" %>
   </head>
 
-  <body>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
     <%= yield %>
   </body>
 </html>
